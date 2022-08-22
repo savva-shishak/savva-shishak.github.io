@@ -1,0 +1,61 @@
+
+
+.position__title {
+    font-size: larger;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+.position__speclist {
+    padding: 15px 0;
+}
+
+.position__spec {
+    padding-top: 3px;
+    padding-left: 8px;
+}
+
+.position__row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.position__chiplist {
+    width: 33%;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .position__row {
+        flex-flow: column;
+    }
+    
+    .position__chiplist {
+        width: 100%;
+    }
+}
+
+.position__chipsinline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+ 
+.position__chip {
+    width: 100%;
+    font-size: small;
+    padding: 5px 10px;
+    background: rgb(31,221,0);
+    margin: 3px 0;
+    border-radius: 14px;
+    transform: scale(0);
+    transition: 300ms;
+    text-align: center;
+}
+
+.position__chip_show {
+    transform: scale(1);
+}
