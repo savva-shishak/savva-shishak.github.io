@@ -122,9 +122,6 @@ body {
     padding-bottom: 300px;
     transition: 300ms;
 }
-.header.header_small + .main, .header_bottom + .main {
-    padding-top: 150px;
-}
 
 .header_bottom .header__text {
     opacity: 0;
