@@ -1,7 +1,7 @@
 .experience {
     margin: 0 auto;
     width: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .experience__row {
@@ -16,15 +16,16 @@
 .experience__item {
     cursor: pointer;
     margin-bottom: 5px;
-    border: 1px solid rgb(0, 180, 0);
-    border-radius: 5px;
+    border: thick double rgb(0, 180, 0);
+    border-width: 7px;
+    border-radius: 12px;
     width: 450px;
     margin: 0 25px;
-    box-shadow: 0 3px 10px grey;
+    box-shadow: 14px 14px 14px rgb(182, 182, 182);
 }
 
 .experience__img {
-    width: 448px;
+    width: 436px;
     height: 300px;
     object-fit: cover;
     object-position: center;
@@ -47,6 +48,7 @@
 
 .experience__anchor, .experience__description {
     padding: 5px 15px;
+    text-decoration: none;
 }
 
 .experience__description {

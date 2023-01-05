@@ -5,7 +5,7 @@
 
     window.addEventListener("scroll", function(e) {
         if (!toggle && document.getElementById("position-chips").getBoundingClientRect().y < this.window.innerHeight / 2 + 50) {
-            setTimeout(showNext, 100);
+            setTimeout(showNext, 300);
             toggle = true;     
         }
     });
@@ -16,7 +16,7 @@
         cursor++;
 
         if (chips.length !== cursor) {
-            setTimeout(showNext, 1000);
+            setTimeout(showNext, 150);
         }
     }
 })();

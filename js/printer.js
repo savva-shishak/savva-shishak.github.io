@@ -26,7 +26,7 @@
         render();
         symbol++;
 
-        setTimeout(print, 100);
+        setTimeout(print, 45);
     }
 
     function render() {
@@ -51,7 +51,7 @@
 
     window.addEventListener("scroll", function(e) {
         if (!toggle && block.getBoundingClientRect().y < this.window.innerHeight / 2 + 50) {
-            setTimeout(print, 100);
+            setTimeout(print, 10);
             toggle = true;     
         }
     });

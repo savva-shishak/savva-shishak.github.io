@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: Verdana, sans-serif;
+    font-size: 98%;
 }
 
 html {
@@ -12,19 +14,19 @@ html {
 body {
     margin: 0;
     padding: 0;
-
     width: 100%;
 }
 
 .header, .header * {
     transition: 300ms;
+    text-decoration: none;
 }
 
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
 
     width: 100%;
@@ -45,10 +47,10 @@ body {
     align-items: center;
     justify-content: space-between;
     background: rgb(31,221,0);
-    background: linear-gradient(50deg, rgba(31,221,0,1) 0%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(50deg, rgb(134, 230, 119) 0%, rgb(66, 208, 243) 100%);
     position: relative;
     border-radius: 10px;
-    box-shadow: 0 3px 10px grey;
+    box-shadow: 0 3px 20px grey;
 }
 .header.header_small .header__body {
     width: 100%;
@@ -88,13 +90,13 @@ body {
 
 .header__position {
     display: inline;
-    color: red;
+    color: rgb(60, 61, 158);
     font-weight: bold;
 }
 
 .header__hrefs {
     position: absolute;
-    font-size: 10px;
+    font-size: 11px;
     height: 25px;
     width: 220px;
     bottom: 8px;
@@ -103,10 +105,11 @@ body {
     justify-content: space-around;
     align-items: center;
     background: white;
-    border: 1px solid rgb(31,221,0);
+    border: 1px solid rgb(134, 230, 119);
     border-radius: 5px;
-    box-shadow: 0 4px 10px grey;
+    box-shadow: 0 4px 10px rgb(61, 129, 50);
 }
+
 .header.header_small .header__hrefs {
     bottom: 25px;
     left: 100px;
