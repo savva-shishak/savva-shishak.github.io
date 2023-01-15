@@ -2,6 +2,7 @@
     margin: 0 auto;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .experience__row {
@@ -16,12 +17,10 @@
 .experience__item {
     cursor: pointer;
     margin-bottom: 5px;
-    border: thick double rgb(0, 180, 0);
-    border-width: 7px;
+    border: 1px solid grey;
     border-radius: 12px;
     width: 450px;
     margin: 0 25px;
-    box-shadow: 14px 14px 14px rgb(182, 182, 182);
 }
 
 .experience__img {
@@ -53,6 +52,22 @@
 
 .experience__description {
     padding-bottom: 20px;
+}
+
+.experience__arrow {
+    color: rgb(60, 61, 158);
+}
+
+.experience__arrows {
+    height: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    user-select: none;
 }
 
 @media (max-width: 700px) {
