@@ -10,7 +10,7 @@
     height: 100%;
     margin-left: calc(50% - 250px);
     transition: 300ms;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 
 .experience__item {
