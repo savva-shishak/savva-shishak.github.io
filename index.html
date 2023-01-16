@@ -19,18 +19,22 @@
 
 <body>
     <header class="header" id="header">
+        <div class="header__back"></div>
         <div class="header__body">
             <img src="./img/avatar.jpg" class="header__img" />
             <div class="header__hrefs">
-                <a href="./docs/Шишак Савва Владимирович.docx" download="Программист - Шишак Савва Владимирович.docx"
-                    class="header__href header__href-left">Скачать резюме</a>
+                <a href="./docs/Шишак Савва Владимирович.docx" download="Программист - Шишак Савва Владимирович.docx" class="header__href header__href-left">Скачать резюме</a>
+                |
                 <a href="https://tuchkovo.hh.ru/resume/d583a50cff06e2b7c10039ed1f6b51496f3273" target="_blank" class="header__href header__href-right">Я на Head Hunter.ru</a>
             </div>
             <div class="header__text">
                 <div class="header__name">Шишак Савва Владимирович</div>
                 <div class="header__about-me">
                     Меня зовут Савва. Я - <div class="header__position">JavaScript (Typescript) разработчик</div>.
-                    Занимаюсь разработкой клиентских web и мобильных приложений на React.ts
+                    Занимаюсь разработкой систем со сложной бизнес логикой.
+                    <br>
+                    <br>
+                    <b>Работу не ищу, уже есть.</b>
                 </div>
             </div>
         </div>
@@ -42,7 +46,7 @@
                 <div class="contacts__name">
                     Телефон
                     <a href="tel:+79829463035" class="contacts__value">
-                        +7 (982) 946-30-35
+                        +7 (977) 943-32-47
                     </a>
                 </div>
             </div>
@@ -66,7 +70,7 @@
                 <div class="contacts__name">
                     WhatsApp
                     <a href="https://wa.me/89829463035" target="_blank" class="contacts__value">
-                        89829463035
+                        89779433247
                     </a>
                 </div>
             </div>
@@ -83,12 +87,12 @@
         <div class="position container">
             <div class="title">Специализация</div>
             <div class="position__title">
-                Разработчик браузерных и мобильных приложений на React
+                Фулстек разработка
             </div>
             <div class="position__speclist">
                 Чем занимаюсь:
                 <li class="position__spec">
-                    Разработка веб и мобильных приложений
+                    Разработка слиентских и серверных приложений
                 </li>
                 <li class="position__spec">
                     Сложный функционал
@@ -113,7 +117,7 @@
                     <div class="position__chip">Любознательность</div>
                     <div class="position__chipsinline">
                         <div class="position__chip">React</div>
-                        <div class="position__chip">Redux</div>
+                        <div class="position__chip">Next.js</div>
                     </div>
                     <div class="position__chipsinline">
                         <div class="position__chip">Typescript</div>
@@ -121,7 +125,11 @@
                     </div>
                     <div class="position__chipsinline">
                         <div class="position__chip">Node.js</div>
-                        <div class="position__chip">Next.js</div>
+                        <div class="position__chip">Koa.js</div>
+                    </div>
+                    <div class="position__chipsinline">
+                        <div class="position__chip">Pullstate</div>
+                        <div class="position__chip">RX.js</div>
                     </div>
                 </div>
             </div>
@@ -130,13 +138,19 @@
             <div class="title">Обо мне</div>
             <div class="about-me__description" id="about-me">
                 <p>Специализируюсь на React Typescript. </p>
-                <p>На новом месте работы хочется иметь возможность заниматься помимо Web Frontend также мобильной и
-                    серверной разработкой</p>
-                <p>Планирую получить коммерческий опыт создания серверных приложений и стать fullstack разработчиком
-                    (уже могу делать полноценные приложения на Java Spring, Node.ts).</p>
-                <p> В будущем хочу стать программным архитектором/ведущим руководителем fullstack разработчиков,
-                    создавать большие проекты в команде.</p>
-                <p>Быстро учусь и дополняю рабочий процесс своими идеями и наработками.</p>
+                <p>
+                    С начала занимался разработкой клиентских приложений на React.ts.
+                    На первом месте работы занимался разработкой клиентсокой части приложения для групповых видеоконференций.
+                </p>
+                <p>
+                    Через короткий промежуток времени стал ответственным за разработку всей системы, начиная от кнопочки на странице входа, заканчивая логикой записи медиа данных на сервере через ffmpeg.
+                </p>
+                <p>
+                    Также научился создавать администраторские панели и создал свой фреймворк для создания администраторских приложений на nodejs без написания UI
+                </p>
+                <p>
+                    Помимо простого написания кода, научился организовывать архитектуру приложения.
+                </p>
             </div>
         </div>
         <div class="experience">
@@ -146,39 +160,59 @@
                     <img src="./img/start.png" alt="" class="experience__img">
                     <div class="experience__year">2017 - 2019</div>
                     <div class="experience__name">Влюбленность</div>
-                    <a href="https://github.com/savva-shishak?tab=repositories" class="experience__anchor">Мои
-                        репозитории</a>
-                    <div class="experience__description">Очень сильно увлекался программированием, каждый день изучал
-                        разные сферы программирования, познакомился с game, desktop, android разработкой. Выбрал
-                        JavaScript как основной язык программирования т.к. позволяет заниматься и frontend и backend
-                        разработкой</div>
+                    <a href="https://github.com/savva-shishak?tab=repositories" class="experience__anchor">Мои репозитории</a>
+                    <div class="experience__description">
+                        Очень сильно увлекался программированием, каждый день изучал
+                        разные сферы программирования, познакомился с game, desktop, android разработкой.
+                    </div>
                 </div>
                 <div carousel-item="2" class="experience__item">
                     <img src="./img/rivergroup.PNG" alt="" class="experience__img">
                     <div class="experience__year">2019 - 2020</div>
                     <div class="experience__name">Системный администратор</div>
                     <a href="https://rivgroup.ru/" class="experience__anchor">Сайт компании</a>
-                    <div class="experience__description">Помогал компании разработать сайт (поиск и работа с
-                        подрядчиком), после чего работал системным администратором в компании</div>
+                    <div class="experience__description">
+                        Помогал компании разработать сайт (поиск и работа с подрядчиком), после чего работал системным администратором в компании
+                    </div>
                 </div>
                 <div carousel-item="3" class="experience__item">
                     <img src="./img/toOlympus.png" alt="" class="experience__img">
                     <div class="experience__year">2020 - 2021</div>
                     <div class="experience__name">Frontend developer</div>
                     <a href="https://toolympus.com/" class="experience__anchor">Сайт работотаделя</a>
-                    <div class="experience__description">Работал фронтенд разработчиком в компании-подрядчика
-                        Российского Института Современного Арбитража и Российского Арбитражного Центра. Занимался
-                        разработкой функциональных коспонентов и страниц приложений на React.ts. Самым большим проектом
-                        была платформа "Зимняя Академия Международного Арбитража". Фронт полностью сделал я (React.ts,
-                        Websocket, Zoom).</div>
+                    <div class="experience__description">
+                        Работал фронтенд разработчиком в компании-подрядчика
+                        Российского Института Современного Арбитража и Российского Арбитражного Центра (React.ts,
+                        Websocket, zoom-react).
+                    </div>
                 </div>
                 <div carousel-item="4" class="experience__item">
                     <img src="./img/arm.jpg" alt="" class="experience__img">
                     <div class="experience__year">2021 - 2022</div>
                     <div class="experience__name">Госслужба</div>
-                    <div class="experience__description">Разработал систему автоматизированного ведения учета и
+                    <div class="experience__description">
+                        Разработал систему автоматизированного ведения учета и
                         документации (Excel, Word и Access, интернет был запрещен, поэтому пользовался тем что есть).
-                        Всё остальное секретно.</div>
+                        Всё остальное секретно.
+                    </div>
+                </div>
+                <div carousel-item="5" class="experience__item">
+                    <img src="./img/alpha-mat.PNG" alt="" class="experience__img">
+                    <div class="experience__year">Работаю сейчас</div>
+                    <div class="experience__name">Альфамат</div>
+                    <a href="https://a-bt.ru/alpha-mat" class="experience__anchor">Сайт компании</a>
+                    <div class="experience__description">
+                        Здесь я занимаюсь фулстек разработкой приложения для видео конференций + работаю над фреймворком для создания администраторских панелей
+                    </div>
+                </div>
+            </div>
+            <div class="experience__arrows">
+                <div id="carousel-left-arrow" class="experience__arrow experience__arrow_left">
+                    < Влево
+                </div>
+                Двигать
+                <div id="carousel-right-arrow" class="experience__arrow experience__arrow_right">
+                    Вправо >
                 </div>
             </div>
         </div>
@@ -219,11 +253,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio container">
-            <div class="title">Портфолио</div>
-        </div>
     </main>
-    <script src="./js/printer.js"></script>
     <script src="./js/show-chips.js"></script>
     <script src="./js/carousel.js"></script>
     <script src="./js/header-scroll.js"></script>

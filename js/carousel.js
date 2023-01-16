@@ -19,14 +19,31 @@ var slideSize =
 
 for (var i = 0; i < row.children.length; i++) {
     var slide = row.children[i];
-    console.log(slide);
 
     slide.onclick = getSlideHandler(+slide.getAttribute("carousel-item"));
 }
 
+var currentSlide = 1;
 
 function getSlideHandler(num) {
     return function (e) {
-        row.style.marginLeft = "calc(50% - " + ((num - 0.5)*slideSize) + "px)";
+        console.log('test');
+        currentSlide = num;
+        row.style.marginLeft = "calc(50% - " + ((currentSlide - 0.5)*slideSize) + "px)";
     }
 }
+
+var leftArrow = document.getElementById("carousel-left-arrow");
+var rightArrow = document.getElementById("carousel-right-arrow");
+
+leftArrow.addEventListener('click', function () {
+    currentSlide = Math.max(currentSlide - 1, 1);
+    console.log(currentSlide);
+    row.style.marginLeft = "calc(50% - " + ((currentSlide - 0.5)*slideSize) + "px)";
+});
+
+rightArrow.addEventListener('click', function () {
+    currentSlide = Math.min(currentSlide + 1, row.children.length);
+    console.log(Math.min(currentSlide + 1, row.children.length), currentSlide, currentSlide + 1, row.children.length);
+    row.style.marginLeft = "calc(50% - " + ((currentSlide - 0.5)*slideSize) + "px)";
+});

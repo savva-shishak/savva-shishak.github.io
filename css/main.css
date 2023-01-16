@@ -2,13 +2,18 @@
     box-sizing: border-box;
 }
 
-a:visited, a {
-    color: blue;
-}
-
 .title {
     text-align: center;
     font-weight: bold;
     font-size: 2em;
-    padding: 35px 0 5px;
+    padding: 35px 0 25px;
+}
+
+a, a:visited {
+    color: #005bea;
+}
+
+:root {
+    --primary: #005bea;
+    --secondary: #00c6fb;
 }
